@@ -1,0 +1,608 @@
+import menHaircutFadeImg from './assets/images/men_haircut_fade_1795444912707.jpg';
+import menBeardTrimImg from './assets/images/men_beard_trim_1795444912313.jpg';
+import menCleanShaveImg from './assets/images/men_clean_shave_1795444911921.jpg';
+import menScalpCareImg from './assets/images/men_scalp_care_1795444911873.jpg';
+import beautyThreadingImg from './assets/images/beauty_threading_1795444912260.jpg';
+import beautyWaxingImg from './assets/images/beauty_waxing_1795444912025.jpg';
+import beautyBodyWaxingImg from './assets/images/beauty_body_waxing_1795445885908.jpg';
+import beautyFacialGroomingImg from './assets/images/beauty_facial_grooming_1795444912786.jpg';
+import facialDeepCleanseImg from './assets/images/facial_deep_cleanse_1795444911885.jpg';
+import facialGlowRitualImg from './assets/images/facial_glow_ritual_1795444912480.jpg';
+import facialHydratingCalmImg from './assets/images/facial_hydrating_calm_1795444911654.jpg';
+import prodCasmaraHydraImg from './assets/images/prod_casmara_hydra_1795446118643.jpg';
+import prodCasmaraLighteningImg from './assets/images/prod_casmara_lightening_1795446119204.jpg';
+import prodGkBalancingImg from './assets/images/prod_gk_balancing_1795446118485.jpg';
+import prodLorealAbsolutImg from './assets/images/prod_loreal_absolut_1795446119159.jpg';
+import prodLorealInforcerMaskImg from './assets/images/prod_loreal_inforcer_mask_1795446119292.jpg';
+import prodLorealInforcerShampooImg from './assets/images/prod_loreal_inforcer_shampoo_1795446119581.jpg';
+import prodPurestCleanserImg from './assets/images/prod_purest_cleanser_1795446118704.jpg';
+import prodPurestRetinolImg from './assets/images/prod_purest_retinol_1795446119139.jpg';
+import prodPurestSpf50Img from './assets/images/prod_purest_spf50_1795446118940.jpg';
+
+export const STUDIO_CATEGORIES = [
+  {
+    id: 'hair',
+    pageUrl: '/hair.html',
+    index: '01',
+    tags: 'CUT · COLOUR · TREATMENTS · SPA',
+    title: 'Hair',
+    subtitle: 'Ladies cuts, hair colour, keratin, botox & restorative hair spa',
+    description:
+      'All types of ladies haircuts, balayage, global colour, keratin, hair botox, nano botox, and L’Oréal hair spa.',
+    ctaLabel: 'Explore the hair studio',
+    image: '/assets/aistudio/shringar-campaign_0c203bb4.jpg',
+    imagePosition: 'center 20%',
+    productsNote: 'Professional hair colour & treatments featuring:',
+    productsUsed: [
+      'L’Oréal Professionnel',
+      'Brazilian Professional Hair Treatment Products',
+      'Normal Hair Colour Products',
+      'L’Oréal & Protein Hair Spa Care',
+    ],
+    packages: [],
+    services: [
+      {
+        name: 'Ladies Haircuts & Hairstyling',
+        tag: 'CUT · BLOW DRY · HAIRSTYLING',
+        detail:
+          'All types of ladies haircuts tailored to your face shape, paired with sleek blowouts, hair straightening, ironing, and occasion hairdos.',
+        includes: [
+          'All Types of Ladies Haircuts & Hair Cut',
+          'Blow Dry & Hair Straightening',
+          'Hair Ironing',
+          'Hairdo & Hairstyling',
+          'Party Hairstyles & Special Occasion Hairstyles',
+        ],
+        image: '/assets/aistudio/hair-cut_a75ad79a.jpg',
+        imagePosition: 'center 20%',
+      },
+      {
+        name: 'Hair Colour & Highlights',
+        tag: 'BALAYAGE · GLOBAL · FASHION COLOUR',
+        detail:
+          'Dimensional highlights, seamless hand-painted balayage, global shades, and fashion hair colours using L’Oréal Professionnel and quality colour lines.',
+        includes: [
+          'Hair Highlights',
+          'Balayage',
+          'Global Hair Colour',
+          'Fashion Hair Colour',
+          'All Types of Hair Colour Services',
+        ],
+        image: '/assets/aistudio/hair-colour_3e7faf20.jpg',
+        imagePosition: 'center 25%',
+      },
+      {
+        name: 'Keratin, Botox & Protein Treatments',
+        tag: 'KERATIN · HAIR BOTOX · NANO BOTOX',
+        detail:
+          'All types of protein and smoothing hair treatments formulated with Brazilian professional products for lasting silkiness and manageability.',
+        includes: [
+          'Protein Treatment',
+          'Keratin Treatment',
+          'Hair Botox',
+          'Nano Botox',
+          'Hair Straightening',
+        ],
+        image: '/assets/aistudio/hair-keratin_f6e77b7c.jpg',
+        imagePosition: 'center 18%',
+      },
+      {
+        name: 'Hair Spa & Scalp Nourishment',
+        tag: 'NORMAL · L’ORÉAL · PROTEIN SPA',
+        detail:
+          'Restorative salon hair spa rituals combining relaxing scalp massage, micro-mist steam, and deep conditioning masks.',
+        includes: [
+          'Normal Hair Spa',
+          'L’Oréal Hair Spa',
+          'Protein Hair Spa',
+        ],
+        image: '/assets/aistudio/hair-spa_93dcee0e.jpg',
+        imagePosition: 'center 30%',
+      },
+    ],
+  },
+  {
+    id: 'men',
+    pageUrl: '/men.html',
+    index: '02',
+    tags: 'CUT · BEARD · SHAVE · STYLING',
+    title: 'Men',
+    subtitle: 'Men’s haircuts, trendy cuts, beard trimming, designing & clean shaving',
+    description:
+      'Men’s haircuts, trendy cuts, beard trimming, beard designing, clean shaving, and hair styling — explore the men’s studio.',
+    ctaLabel: 'Explore the men studio',
+    image: menHaircutFadeImg,
+    imagePosition: 'center 25%',
+    productsNote: '',
+    productsUsed: [],
+    packages: [],
+    services: [
+      {
+        name: 'Men’s Haircut & Trendy Haircuts',
+        tag: 'CLASSIC CUTS · SKIN FADES · CROPS',
+        detail:
+          'Precision men’s haircuts and trendy fades tailored to your hair growth pattern for clean structure and effortless upkeep.',
+        includes: [
+          'Men’s Haircut',
+          'Trendy Haircuts & Skin Fades',
+          'Tailored Scissor & Clipper Finish',
+        ],
+        image: menHaircutFadeImg,
+        imagePosition: 'center 25%',
+      },
+      {
+        name: 'Beard Trimming & Beard Designing',
+        tag: 'SCULPT · RAZOR LINE-UP · CONDITIONING',
+        detail:
+          'Custom beard trimming and sharp beard designing with clean cheek and neckline shaping.',
+        includes: [
+          'Beard Trimming',
+          'Beard Designing',
+          'Precision Line-Up & Conditioning Care',
+        ],
+        image: menBeardTrimImg,
+        imagePosition: 'center 22%',
+      },
+      {
+        name: 'Clean Shaving',
+        tag: 'HOT TOWEL · CLASSIC RAZOR',
+        detail:
+          'Traditional warm-towel prep, rich protective lather, and close razor shave followed by calming post-shave care.',
+        includes: [
+          'Clean Shaving',
+          'Warm Towel Facial Prep',
+          'Soothing Aftershave Finish',
+        ],
+        image: menCleanShaveImg,
+        imagePosition: 'center 25%',
+      },
+      {
+        name: 'Hair Styling & Scalp Care',
+        tag: 'WASH · MASSAGE · STYLING',
+        detail:
+          'Refreshing wash, relaxing scalp massage, and polished everyday or occasion hair styling.',
+        includes: [
+          'Hair Styling',
+          'Refreshing Wash & Scalp Massage',
+          'Natural Matte or Gloss Finish',
+        ],
+        image: menScalpCareImg,
+        imagePosition: 'center 30%',
+      },
+    ],
+  },
+  {
+    id: 'makeup',
+    pageUrl: '/makeup.html',
+    index: '03',
+    tags: 'BRIDAL · SANGEET · PARTY · GROOM',
+    title: 'Makeup',
+    subtitle: 'Bridal, reception, engagement, mehendi, sangeet, party, groom & normal makeup',
+    description:
+      'Bridal, reception, mehendi, sangeet, engagement, party, groom and normal makeup crafted with Huda Beauty and MAC Cosmetics.',
+    ctaLabel: 'Explore the makeup studio',
+    image: '/assets/aistudio/shringar-makeup_0aa98376.jpg',
+    imagePosition: 'center 18%',
+    productsNote: 'Premium makeup products we use:',
+    productsUsed: ['Huda Beauty', 'MAC Cosmetics'],
+    packages: [
+      {
+        name: 'Bridal Package',
+        summary: 'Complete heritage bridal makeup, hairstyling, draping, and pre-ceremony touch-up finish.',
+      },
+      {
+        name: 'Groom Package',
+        summary: 'Refined camera-ready groom makeup, hair styling, and fresh skin prep for the wedding day.',
+      },
+      {
+        name: 'Mini Package',
+        summary: 'Essential party or occasion makeup and hairstyling look tailored for compact celebrations.',
+      },
+      {
+        name: 'All Services Package',
+        summary: 'Full studio care bundling pre-event skin, hair, nails, beauty grooming, and event makeup.',
+      },
+    ],
+    services: [
+      {
+        name: 'Bridal, Reception & Groom Makeup',
+        tag: 'BRIDAL · RECEPTION · GROOM',
+        detail:
+          'All types of wedding artistry — from luminous heritage Bridal Makeup and Reception glam to natural camera-ready Groom Makeup.',
+        includes: [
+          'Bridal Makeup',
+          'Reception Makeup',
+          'Groom Makeup',
+          'Huda Beauty & MAC Complexion Prep',
+        ],
+        image: '/assets/aistudio/makeup-bridal_aa31b99a.jpg',
+        imagePosition: 'center 18%',
+      },
+      {
+        name: 'Engagement, Mehendi & Sangeet Makeup',
+        tag: 'ENGAGEMENT · MEHENDI · SANGEET',
+        detail:
+          'Soft romantic radiance, dewy rose tones, and floral-accented hairstyling designed for daylight Mehendi, Engagement, and evening Sangeet.',
+        includes: [
+          'Engagement Makeup',
+          'Mehendi Makeup',
+          'Sangeet Makeup',
+        ],
+        image: '/assets/aistudio/makeup-engagement_1cb2a6fb.jpg',
+        imagePosition: 'center 18%',
+      },
+      {
+        name: 'Party Makeup',
+        tag: 'EVENING GLAM · LONG-WEAR',
+        detail:
+          'High-definition evening glamour featuring sculpted cheeks, crisp liner, lashes, and statement velvet or gloss lips.',
+        includes: [
+          'Party Makeup',
+          'Sculpted Eye & Lash Artistry',
+          'Sleek Bun or Evening Waves',
+        ],
+        image: '/assets/aistudio/makeup-party_113054ea.jpg',
+        imagePosition: 'center 18%',
+      },
+      {
+        name: 'Normal Makeup',
+        tag: 'EVERYDAY · NATURAL FINISH',
+        detail:
+          'Lightweight, breathable complexion balancing with soft brows and a fresh, natural finish for daytime outings and family gatherings.',
+        includes: [
+          'Normal Makeup',
+          'Skin Hydration & Natural Base',
+          'Soft Cheek & Lip Tint',
+        ],
+        image: '/assets/aistudio/makeup-everyday_1f94b37f.jpg',
+        imagePosition: 'center 18%',
+      },
+    ],
+  },
+  {
+    id: 'nails',
+    pageUrl: '/nails.html',
+    index: '04',
+    tags: 'MANICURE · PEDICURE · EXTENSIONS · ART',
+    title: 'Nails',
+    subtitle: 'Normal & deluxe manicure/pedicure, gel polish, overlay, extensions & nail art',
+    description:
+      'All types of nail care services — normal and deluxe manicure & pedicure, gel polish, gel overlay, nail extensions, and nail art.',
+    ctaLabel: 'Explore the nails studio',
+    image: '/assets/aistudio/shringar-nails_a86a8e25.jpg',
+    imagePosition: 'center center',
+    productsNote: '',
+    productsUsed: [],
+    packages: [],
+    services: [
+      {
+        name: 'Normal & Deluxe Manicure',
+        tag: 'CUTICLE CARE · HAND SPA · POLISH',
+        detail:
+          'Precision nail shaping, gentle cuticle work, exfoliating hand ritual in Deluxe care, and crisp classic polish.',
+        includes: [
+          'Normal Manicure',
+          'Deluxe Manicure',
+          'Cuticle Work & Relaxing Hand Massage',
+        ],
+        image: '/assets/aistudio/nails-manicure_b4262605.jpg',
+        imagePosition: 'center center',
+      },
+      {
+        name: 'Normal & Deluxe Pedicure',
+        tag: 'WARM SOAK · FOOT SPA · POLISH',
+        detail:
+          'Soothing floral foot soak, heel smoothing, relaxing calf massage, and fresh glossy finish.',
+        includes: [
+          'Normal Pedicure',
+          'Deluxe Pedicure',
+          'Exfoliating Scrub & Foot Massage',
+        ],
+        image: '/assets/aistudio/nails-pedicure_a78b7b32.jpg',
+        imagePosition: 'center center',
+      },
+      {
+        name: 'Gel Polish, Gel Overlay & Extensions',
+        tag: 'GEL POLISH · OVERLAY · EXTENSIONS',
+        detail:
+          'Chip-resistant UV gel colour, protective natural nail overlays, and sculpted nail extensions in your preferred length and shape.',
+        includes: [
+          'Gel Polish',
+          'Gel Overlay',
+          'Nail Extensions',
+        ],
+        image: '/assets/aistudio/nails-gel_d04a53c6.jpg',
+        imagePosition: 'center center',
+      },
+      {
+        name: 'Nail Art & Nail Designing',
+        tag: 'CUSTOM DESIGNS · BRIDAL · FLORAL',
+        detail:
+          'Hand-painted florals, delicate chrome or gold-foil accents, and bespoke nail designing for weddings and everyday expression.',
+        includes: [
+          'Nail Art & Nail Designing',
+          'All Types of Nail Care Services',
+          'High-Gloss Protective Top Coat',
+        ],
+        image: '/assets/aistudio/nails-art_3d85aa8f.jpg',
+        imagePosition: 'center center',
+      },
+    ],
+  },
+  {
+    id: 'beauty',
+    pageUrl: '/beauty.html',
+    index: '05',
+    tags: 'THREADING · WAXING',
+    title: 'Beauty',
+    subtitle: 'Full face threading and complete body waxing services',
+    description:
+      'Full face threading and full body, legs, arms, underarms, chest, and back waxing — clean, gentle care.',
+    ctaLabel: 'Explore the beauty studio',
+    image: beautyThreadingImg,
+    imagePosition: 'center 25%',
+    productsNote: '',
+    productsUsed: [],
+    packages: [],
+    services: [
+      {
+        name: 'Full Face Threading',
+        tag: 'THREADING SERVICES',
+        detail:
+          'Gentle organic cotton threading for clean brow framing and smooth, even facial skin without harsh irritation.',
+        includes: [
+          'Full Face Threading',
+          'Eyebrow Shaping & Clean Definition',
+          'Soothing Post-Threading Cooling Finish',
+        ],
+        image: beautyThreadingImg,
+        imagePosition: 'center 25%',
+      },
+      {
+        name: 'Upper Lip, Chin & Delicate Touch-Ups',
+        tag: 'EXPRESS THREADING CARE',
+        detail:
+          'Quick, gentle upper lip, chin, and forehead threading finished with calming aloe soothing gel.',
+        includes: [
+          'Upper Lip & Chin Threading',
+          'Forehead & Sideburn Clean-Up',
+          'Cooling Botanical Aloe Finish',
+        ],
+        image: beautyFacialGroomingImg,
+        imagePosition: 'center 22%',
+      },
+      {
+        name: 'Full Body, Legs & Arms Waxing',
+        tag: 'WAXING SERVICES',
+        detail:
+          'Hygienic, low-temperature gentle waxing sessions tailored for smooth limbs and full-body comfort.',
+        includes: [
+          'Full Body Waxing',
+          'Full Legs Waxing',
+          'Full Arms Waxing',
+        ],
+        image: beautyBodyWaxingImg,
+        imagePosition: 'center center',
+      },
+      {
+        name: 'Underarms, Chest & Back Waxing',
+        tag: 'TARGETED WAXING CARE',
+        detail:
+          'Focused unisex waxing treatments for underarms, chest, and back using calming botanical pre- and post-wax care.',
+        includes: [
+          'Underarms Waxing',
+          'Chest Waxing',
+          'Back Waxing',
+        ],
+        image: beautyWaxingImg,
+        imagePosition: 'center center',
+      },
+    ],
+  },
+  {
+    id: 'facial',
+    pageUrl: '/facial.html',
+    index: '06',
+    tags: 'CLEANSING · FACIALS · SKIN TREATMENTS',
+    title: 'Facial',
+    subtitle: 'All skin types facials, cleansing & branded skin treatments',
+    description:
+      'Normal & deep cleansing, fruit, brightening, pigmentation, anti-aging, collagen, detox & oily skin treatments with Casmara, Kanpeki, Lotus & more.',
+    ctaLabel: 'Explore the facial studio',
+    image: facialGlowRitualImg,
+    imagePosition: 'center 25%',
+    productsNote: 'Branded facial products available:',
+    productsUsed: [
+      'Casmara',
+      'Kanpeki',
+      'Lotus',
+      'Aroma Magic',
+      'Fruit Facial Products',
+      'Skinora Products',
+    ],
+    packages: [],
+    services: [
+      {
+        name: 'Normal, Deep Cleansing & Oily Skin',
+        tag: 'CLEANSING · DETOX · OILY SKIN',
+        detail:
+          'Purifying cleansing, steam, and pore-balancing rituals designed to clear congestion and refresh oily or tired skin.',
+        includes: [
+          'Normal Cleansing & Deep Cleansing',
+          'Skin Detox Facial',
+          'Oily Skin Treatment',
+        ],
+        image: facialDeepCleanseImg,
+        imagePosition: 'center 28%',
+      },
+      {
+        name: 'Normal, Fruit & Brightening Facials',
+        tag: 'BRIGHTENING · PIGMENTATION CARE',
+        detail:
+          'Radiance-focused facials and pigmentation care tailored for dullness, uneven tone, and pre-event glow.',
+        includes: [
+          'Normal Facial & Fruit Facial',
+          'Skin Brightening Facial',
+          'Pigmentation Skin Treatment',
+        ],
+        image: facialGlowRitualImg,
+        imagePosition: 'center 25%',
+      },
+      {
+        name: 'Anti-Aging & Collagen Facials',
+        tag: 'ANTI-AGING · COLLAGEN · ALL SKIN TYPES',
+        detail:
+          'Firming botanical massage and collagen-rich masks formulated to deeply hydrate and revitalize skin elasticity.',
+        includes: [
+          'Anti-Aging Facial',
+          'Collagen Facial',
+          'All Skin Types Facial & Treatments',
+        ],
+        image: facialHydratingCalmImg,
+        imagePosition: 'center 30%',
+      },
+    ],
+  },
+];
+
+export const STUDIO_PRODUCTS = [
+  {
+    brand: 'L’ORÉAL PROFESSIONNEL',
+    name: 'Absolut Repair Shampoo',
+    image: prodLorealAbsolutImg,
+  },
+  {
+    brand: 'L’ORÉAL PROFESSIONNEL',
+    name: 'Inforcer Strengthening Shampoo',
+    image: prodLorealInforcerShampooImg,
+  },
+  {
+    brand: 'L’ORÉAL PROFESSIONNEL',
+    name: 'Inforcer Professional Mask',
+    image: prodLorealInforcerMaskImg,
+  },
+  {
+    brand: 'GK HAIR',
+    name: 'Balancing Shampoo & Conditioner',
+    image: prodGkBalancingImg,
+  },
+  {
+    brand: 'CASMARA',
+    name: 'Hydra Lifting Firming Cream & Serum',
+    image: prodCasmaraHydraImg,
+  },
+  {
+    brand: 'CASMARA',
+    name: 'Lightening Nutri SPF 50 Cream',
+    image: prodCasmaraLighteningImg,
+  },
+  {
+    brand: 'THE PUREST SOLUTIONS',
+    name: 'Exfoliating Salicylic Acid Cleanser',
+    image: prodPurestCleanserImg,
+  },
+  {
+    brand: 'THE PUREST SOLUTIONS',
+    name: '1% Retinol + Ceramide Serum',
+    image: prodPurestRetinolImg,
+  },
+  {
+    brand: 'THE PUREST SOLUTIONS',
+    name: '50 SPF Mattifier & Oil Control',
+    image: prodPurestSpf50Img,
+  },
+];
+
+export const LOOKBOOK_ITEMS = [
+  {
+    id: 'look-makeup',
+    title: 'Soft glam, lasting impressions',
+    category: 'MAKEUP & BRIDAL',
+    image: '/assets/aistudio/WhatsApp_Image_2026-11-23_at_16.16.11_aa54b829.jpeg',
+    imagePosition: 'center 22%',
+    tall: false,
+    caption: 'Real Shringar client transformations — luminous bridal glow, floral updos, and evening party glam.',
+    galleryExtras: [
+      {
+        src: '/assets/aistudio/WhatsApp_Image_2026-11-23_at_16.27.09_f5d723aa.jpeg',
+        label: 'Bridal Makeup',
+      },
+      {
+        src: '/assets/aistudio/WhatsApp_Image_2026-11-23_at_16.32.37_e7c24c60.jpeg',
+        label: 'Reception & Wedding Glam',
+      },
+      {
+        src: '/assets/aistudio/WhatsApp_Image_2026-11-23_at_16.16.06_d9d76000.jpeg',
+        label: 'Engagement Soft Glam',
+      },
+      {
+        src: '/assets/aistudio/WhatsApp_Image_2026-11-23_at_16.16.33_bdb8d86f.jpeg',
+        label: 'Bridal Studio Look',
+      },
+      {
+        src: '/assets/aistudio/WhatsApp_Image_2026-11-23_at_16.28.16_c98a3709.jpeg',
+        label: 'Party Makeup',
+      },
+    ],
+  },
+  {
+    id: 'look-hair',
+    title: 'A good hair day, reimagined',
+    category: 'HAIR & STYLING',
+    image: '/assets/aistudio/WhatsApp_Image_2026-11-23_at_16.16.15_b657eb7b.jpeg',
+    imagePosition: 'center 25%',
+    tall: true,
+    caption: 'Sunlit balayage waves, sleek straightening, and floral occasion hairdos crafted in-studio.',
+    galleryExtras: [
+      {
+        src: '/assets/aistudio/WhatsApp_Image_2026-11-23_at_16.32.14_fc36dfad.jpeg',
+        label: 'Hair Colour & Straightening',
+      },
+      {
+        src: '/assets/aistudio/WhatsApp_Image_2026-11-23_at_16.32.36_16f8d33d.jpeg',
+        label: 'Half-Up Floral Waves',
+      },
+      {
+        src: '/assets/aistudio/WhatsApp_Image_2026-11-23_at_16.29.56_424a39fa.jpeg',
+        label: 'Floral Bun Hairstyling',
+      },
+      {
+        src: '/assets/aistudio/WhatsApp_Image_2026-11-23_at_16.32.43_8ccbfd8a.jpeg',
+        label: 'Bridal Updo & Curls',
+      },
+      {
+        src: '/assets/aistudio/hair-cut_a75ad79a.jpg',
+        label: 'Ladies Haircuts & Styling',
+      },
+    ],
+  },
+  {
+    id: 'look-nails',
+    title: 'Details worth falling for',
+    category: 'NAILS',
+    image: '/assets/aistudio/shringar-nails_a86a8e25.jpg',
+    imagePosition: 'center center',
+    tall: false,
+    caption: 'Deep crimson high-gloss gel manicure shaped to clean natural proportions.',
+    galleryExtras: [
+      { src: '/assets/aistudio/nails-manicure_b4262605.jpg', label: 'Normal & Deluxe Manicure' },
+      { src: '/assets/aistudio/nails-pedicure_a78b7b32.jpg', label: 'Normal & Deluxe Pedicure' },
+      { src: '/assets/aistudio/nails-gel_d04a53c6.jpg', label: 'Gel Polish, Overlay & Extensions' },
+      { src: '/assets/aistudio/nails-art_3d85aa8f.jpg', label: 'Nail Art & Nail Designing' },
+    ],
+  },
+];
+
+export const TIME_SLOTS = [
+  '10:00 AM',
+  '11:30 AM',
+  '01:00 PM',
+  '02:30 PM',
+  '04:00 PM',
+  '05:30 PM',
+  '07:00 PM',
+];
+
+export const SALON_WHATSAPP_NUMBER = '9779818565297';
+export const SALON_WHATSAPP_DISPLAY = '+977-9818565297';
+
