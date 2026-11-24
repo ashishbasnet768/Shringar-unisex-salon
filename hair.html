@@ -14,29 +14,28 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/src/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body data-page="hair">
     <header class="site-header" id="top">
       <div class="container header-inner">
-        <a href="/index.html" class="brand-lockup">
+        <a href="index.html" class="brand-lockup">
           <img
-            src="/assets/aistudio/shringarlogo_11a6ca6a.jpg"
+            src="images/shringarlogo_11a6ca6a.jpg"
             alt="Shringar Unisex Salon & Makeup Studio logo"
             class="brand-logo"
             referrerpolicy="no-referrer"
           />
-          <span class="brand-text-group">
-            <span class="brand-wordmark">shringar</span>
-            <span class="brand-sub">UNISEX SALON &amp; MAKEUP STUDIO</span>
-          </span>
+          <span class="brand-wordmark">shringar</span>
         </a>
 
         <div class="header-right">
           <nav class="main-nav" aria-label="Primary Navigation">
-            <a href="/index.html#story" class="nav-link">Our story</a>
-            <a href="/services.html" class="nav-link is-active">Services</a>
-            <a href="/index.html#lookbook" class="nav-link">The lookbook</a>
+            <a href="index.html#story" class="nav-link">Our story</a>
+            <a href="services.html" class="nav-link is-active" aria-current="page">Services</a>
+            <a href="index.html#products" class="nav-link">Products</a>
+            <a href="index.html#lookbook" class="nav-link">The lookbook</a>
+            <a href="index.html#location" class="nav-link">Location</a>
           </nav>
 
           <button type="button" class="btn-burgundy header-cta" data-open-booking="Hair">
@@ -63,9 +62,11 @@
 
       <div class="mobile-drawer" id="mobile-drawer" hidden>
         <div class="container mobile-drawer-inner">
-          <a href="/index.html#story" class="mobile-nav-link">Our story</a>
-          <a href="/services.html" class="mobile-nav-link">Services</a>
-          <a href="/index.html#lookbook" class="mobile-nav-link">The lookbook</a>
+          <a href="index.html#story" class="mobile-nav-link">Our story</a>
+          <a href="services.html" class="mobile-nav-link">Services</a>
+          <a href="index.html#products" class="mobile-nav-link">Products</a>
+          <a href="index.html#lookbook" class="mobile-nav-link">The lookbook</a>
+          <a href="index.html#location" class="mobile-nav-link">Location</a>
           <button type="button" class="btn-burgundy mobile-cta" data-open-booking="Hair">
             <span>Book a visit</span>
             <span aria-hidden="true">↗</span>
@@ -78,9 +79,9 @@
       <section class="page-hero">
         <div class="container">
           <nav class="page-breadcrumb" aria-label="Breadcrumb">
-            <a href="/index.html">HOME</a>
+            <a href="index.html">HOME</a>
             <span aria-hidden="true">/</span>
-            <a href="/services.html">SERVICES</a>
+            <a href="services.html">SERVICES</a>
             <span aria-hidden="true">/</span>
             <span>HAIR STUDIO</span>
           </nav>
@@ -93,13 +94,13 @@
           </p>
 
           <div class="studio-page-tabs" aria-label="Studio Pages">
-            <a href="/services.html" class="studio-page-tab">All Studios</a>
-            <a href="/hair.html" class="studio-page-tab is-active">Hair</a>
-            <a href="/men.html" class="studio-page-tab">Men</a>
-            <a href="/makeup.html" class="studio-page-tab">Makeup</a>
-            <a href="/nails.html" class="studio-page-tab">Nails</a>
-            <a href="/beauty.html" class="studio-page-tab">Beauty</a>
-            <a href="/facial.html" class="studio-page-tab">Facial</a>
+            <a href="services.html" class="studio-page-tab">All Studios</a>
+            <a href="hair.html" class="studio-page-tab is-active">Hair</a>
+            <a href="men.html" class="studio-page-tab">Men</a>
+            <a href="makeup.html" class="studio-page-tab">Makeup</a>
+            <a href="nails.html" class="studio-page-tab">Nails</a>
+            <a href="beauty.html" class="studio-page-tab">Beauty</a>
+            <a href="facial.html" class="studio-page-tab">Facial</a>
           </div>
         </div>
       </section>
@@ -129,6 +130,14 @@
             </button>
             <a href="tel:+9779818565297" class="cta-band-link">Call +977-9818565297</a>
             <a
+              href="https://www.google.com/maps/place/Shringar+unisex+salon+%26+Make-up+Studio/@27.6932626,85.3688654,17z/data=!3m1!4b1!4m6!3m5!1s0x39eb1b001f20bdad:0xd8fcc2e0f1a87e5a!8m2!3d27.6932626!4d85.3688654!16s%2Fg%2F11nvw0dv5b?entry=ttu&g_ep=EgoyMDI2MTExOC4xIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="cta-band-link"
+            >
+              Google Maps Directions
+            </a>
+            <a
               href="https://instagram.com/shringar_touch_with_beauty"
               target="_blank"
               rel="noopener noreferrer"
@@ -142,13 +151,53 @@
     </main>
 
     <footer class="site-footer">
-      <div class="container footer-inner">
-        <div class="footer-brand">
-          <span class="footer-wordmark">shringar</span>
-          <span class="footer-sub">UNISEX SALON &amp; MAKEUP STUDIO</span>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <span class="footer-wordmark">shringar</span>
+            <span class="footer-sub">UNISEX SALON &amp; MAKEUP STUDIO</span>
+            <p class="footer-tagline">Look good. Feel good. Be confident. Hair, grooming, makeup, nails, beauty &amp; facial care.</p>
+          </div>
+
+          <div>
+            <p class="footer-col-title">OUR STUDIOS</p>
+            <div class="footer-links">
+              <a href="hair.html" class="footer-link">Hair Studio</a>
+              <a href="men.html" class="footer-link">Men’s Studio</a>
+              <a href="makeup.html" class="footer-link">Makeup Studio</a>
+              <a href="nails.html" class="footer-link">Nails Studio</a>
+              <a href="beauty.html" class="footer-link">Beauty Studio</a>
+              <a href="facial.html" class="footer-link">Facial Studio</a>
+            </div>
+          </div>
+
+          <div>
+            <p class="footer-col-title">VISIT &amp; CONNECT</p>
+            <div class="footer-links">
+              <a href="tel:+9779818565297" class="footer-link">Phone &amp; WhatsApp: +977-9818565297</a>
+              <a
+                href="https://instagram.com/shringar_touch_with_beauty"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer-link"
+              >
+                Instagram: @shringar_touch_with_beauty ↗
+              </a>
+              <a
+                href="https://www.google.com/maps/place/Shringar+unisex+salon+%26+Make-up+Studio/@27.6932626,85.3688654,17z/data=!3m1!4b1!4m6!3m5!1s0x39eb1b001f20bdad:0xd8fcc2e0f1a87e5a!8m2!3d27.6932626!4d85.3688654!16s%2Fg%2F11nvw0dv5b?entry=ttu&g_ep=EgoyMDI2MTExOC4xIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer-link"
+              >
+                Google Maps Directions ↗
+              </a>
+              <a href="index.html#location" class="footer-link">27.693263° N, 85.368865° E</a>
+            </div>
+          </div>
         </div>
-        <div class="footer-meta">
-          <span>© 2026 Shringar. All rights reserved.</span>
+
+        <div class="footer-bottom">
+          <span>© 2026 Shringar Unisex Salon &amp; Makeup Studio. All rights reserved.</span>
           <a href="#top" class="footer-top-link">Back to top ↗</a>
         </div>
       </div>
@@ -162,6 +211,7 @@
     </div>
 
     <div class="toast-region" id="toast-region" aria-live="polite"></div>
-    <script type="module" src="/src/app.js"></script>
+    <script defer src="js/data.js"></script>
+    <script defer src="js/app.js"></script>
   </body>
 </html>

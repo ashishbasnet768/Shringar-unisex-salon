@@ -21,31 +21,29 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/src/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body data-page="home">
     <!-- Top Bar -->
     <header class="site-header" id="top">
       <div class="container header-inner">
-        <a href="/index.html" class="brand-lockup">
+        <a href="index.html" class="brand-lockup">
           <img
-            src="/assets/aistudio/shringarlogo_11a6ca6a.jpg"
+            src="images/shringarlogo_11a6ca6a.jpg"
             alt="Shringar Unisex Salon & Makeup Studio logo"
             class="brand-logo"
             referrerpolicy="no-referrer"
           />
-          <span class="brand-text-group">
-            <span class="brand-wordmark">shringar</span>
-            <span class="brand-sub">UNISEX SALON &amp; MAKEUP STUDIO</span>
-          </span>
+          <span class="brand-wordmark">shringar</span>
         </a>
 
         <div class="header-right">
           <nav class="main-nav" aria-label="Primary Navigation">
             <a href="#story" class="nav-link">Our story</a>
-            <a href="/services.html" class="nav-link">Services</a>
+            <a href="services.html" class="nav-link">Services</a>
             <a href="#products" class="nav-link">Products</a>
             <a href="#lookbook" class="nav-link">The lookbook</a>
+            <a href="#location" class="nav-link">Location</a>
           </nav>
 
           <button type="button" class="btn-burgundy header-cta" data-open-booking="">
@@ -73,9 +71,10 @@
       <div class="mobile-drawer" id="mobile-drawer" hidden>
         <div class="container mobile-drawer-inner">
           <a href="#story" class="mobile-nav-link">Our story</a>
-          <a href="/services.html" class="mobile-nav-link">Services</a>
+          <a href="services.html" class="mobile-nav-link">Services</a>
           <a href="#products" class="mobile-nav-link">Products</a>
           <a href="#lookbook" class="mobile-nav-link">The lookbook</a>
+          <a href="#location" class="mobile-nav-link">Location</a>
           <button type="button" class="btn-burgundy mobile-cta" data-open-booking="">
             <span>Book a visit</span>
             <span aria-hidden="true">↗</span>
@@ -89,7 +88,7 @@
       <section class="hero-section">
         <div class="hero-bg-media">
           <img
-            src="/assets/aistudio/shringar-campaign_0c203bb4.jpg"
+            src="images/shringar-campaign_0c203bb4.jpg"
             alt="Shringar editorial hair and beauty campaign portrait"
             class="hero-bg-img"
             referrerpolicy="no-referrer"
@@ -118,7 +117,7 @@
             </p>
 
             <div class="hero-actions">
-              <a href="/services.html" class="btn-burgundy btn-hero">
+              <a href="services.html" class="btn-burgundy btn-hero">
                 <span>Explore our services</span>
                 <span aria-hidden="true">↗</span>
               </a>
@@ -142,15 +141,15 @@
       <!-- Burgundy Discipline Strip -->
       <div class="discipline-strip" aria-label="Studio Disciplines">
         <div class="container discipline-strip-inner">
-          <a href="/hair.html" class="strip-item">HAIR</a>
+          <a href="hair.html" class="strip-item">HAIR</a>
           <span class="strip-sparkle" aria-hidden="true">✦</span>
-          <a href="/beauty.html" class="strip-item">BEAUTY</a>
+          <a href="beauty.html" class="strip-item">BEAUTY</a>
           <span class="strip-sparkle" aria-hidden="true">✦</span>
-          <a href="/makeup.html" class="strip-item">MAKEUP</a>
+          <a href="makeup.html" class="strip-item">MAKEUP</a>
           <span class="strip-sparkle" aria-hidden="true">✦</span>
-          <a href="/facial.html" class="strip-item">FACIAL</a>
+          <a href="facial.html" class="strip-item">FACIAL</a>
           <span class="strip-sparkle" aria-hidden="true">✦</span>
-          <a href="/nails.html" class="strip-item">NAILS</a>
+          <a href="nails.html" class="strip-item">NAILS</a>
         </div>
       </div>
 
@@ -178,7 +177,7 @@
         <div class="container story-split">
           <div class="story-photo-wrap">
             <img
-              src="/src/assets/images/shringar_studio_interior_1795447956001.jpg"
+              src="images/shringar_studio_interior_1795447956001.jpg"
               alt="Shringar salon interior styling chairs and mirrors"
               class="story-photo"
               referrerpolicy="no-referrer"
@@ -270,7 +269,78 @@
         </div>
       </section>
 
-      <!-- Section 5: Burgundy CTA Band -->
+      <!-- Section 5: Visit the Studio (Interactive Google Map) -->
+      <section class="section-ivory" id="location">
+        <div class="container location-split">
+          <div class="location-map-frame">
+            <div
+              id="shringar-map"
+              class="location-map-canvas"
+              role="region"
+              aria-label="Interactive map of Shringar Unisex Salon and Makeup Studio"
+            ></div>
+          </div>
+
+          <div class="location-copy">
+            <p class="eyebrow">VISIT THE STUDIO</p>
+            <h2 class="story-heading">
+              Find us at <span class="heading-italic-burgundy">Shringar.</span>
+            </h2>
+            <p class="story-paragraph">
+              Drop in for everyday grooming, restorative hair care, or bridal and event artistry —
+              pin our studio directly on Google Maps for turn-by-turn directions.
+            </p>
+
+            <div class="location-details">
+              <div class="location-detail-row">
+                <span class="location-detail-label">STUDIO</span>
+                <span class="location-detail-value">Shringar Unisex Salon &amp; Makeup Studio</span>
+              </div>
+              <div class="location-detail-row">
+                <span class="location-detail-label">PIN COORDINATES</span>
+                <span class="location-detail-value">27.693263° N, 85.368865° E</span>
+              </div>
+              <div class="location-detail-row">
+                <span class="location-detail-label">WHATSAPP &amp; PHONE</span>
+                <span class="location-detail-value">
+                  <a href="tel:+9779818565297" class="location-detail-link">+977-9818565297</a>
+                </span>
+              </div>
+              <div class="location-detail-row">
+                <span class="location-detail-label">INSTAGRAM</span>
+                <span class="location-detail-value">
+                  <a
+                    href="https://instagram.com/shringar_touch_with_beauty"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="location-detail-link"
+                  >
+                    @shringar_touch_with_beauty
+                  </a>
+                </span>
+              </div>
+            </div>
+
+            <div class="location-actions">
+              <a
+                href="https://www.google.com/maps/place/Shringar+unisex+salon+%26+Make-up+Studio/@27.6932626,85.3688654,17z/data=!3m1!4b1!4m6!3m5!1s0x39eb1b001f20bdad:0xd8fcc2e0f1a87e5a!8m2!3d27.6932626!4d85.3688654!16s%2Fg%2F11nvw0dv5b?entry=ttu&g_ep=EgoyMDI2MTExOC4xIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-burgundy"
+              >
+                <span>Get directions on Google Maps</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+              <button type="button" class="underline-cta" data-open-booking="">
+                <span>Book a visit</span>
+                <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 6: Burgundy CTA Band -->
       <section class="cta-burgundy-band">
         <div class="container cta-band-inner">
           <p class="cta-band-kicker">YOUR NEXT BEAUTIFUL MOMENT</p>
@@ -291,6 +361,14 @@
             </button>
             <a href="tel:+9779818565297" class="cta-band-link">Call +977-9818565297</a>
             <a
+              href="https://www.google.com/maps/place/Shringar+unisex+salon+%26+Make-up+Studio/@27.6932626,85.3688654,17z/data=!3m1!4b1!4m6!3m5!1s0x39eb1b001f20bdad:0xd8fcc2e0f1a87e5a!8m2!3d27.6932626!4d85.3688654!16s%2Fg%2F11nvw0dv5b?entry=ttu&g_ep=EgoyMDI2MTExOC4xIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="cta-band-link"
+            >
+              Google Maps Directions
+            </a>
+            <a
               href="https://instagram.com/shringar_touch_with_beauty"
               target="_blank"
               rel="noopener noreferrer"
@@ -303,16 +381,55 @@
       </section>
     </main>
 
-    <!-- Minimal Footer -->
+    <!-- Editorial Footer -->
     <footer class="site-footer">
-      <div class="container footer-inner">
-        <div class="footer-brand">
-          <span class="footer-wordmark">shringar</span>
-          <span class="footer-sub">UNISEX SALON &amp; MAKEUP STUDIO</span>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <span class="footer-wordmark">shringar</span>
+            <span class="footer-sub">UNISEX SALON &amp; MAKEUP STUDIO</span>
+            <p class="footer-tagline">Look good. Feel good. Be confident. Hair, grooming, makeup, nails, beauty &amp; facial care.</p>
+          </div>
+
+          <div>
+            <p class="footer-col-title">OUR STUDIOS</p>
+            <div class="footer-links">
+              <a href="hair.html" class="footer-link">Hair Studio</a>
+              <a href="men.html" class="footer-link">Men’s Studio</a>
+              <a href="makeup.html" class="footer-link">Makeup Studio</a>
+              <a href="nails.html" class="footer-link">Nails Studio</a>
+              <a href="beauty.html" class="footer-link">Beauty Studio</a>
+              <a href="facial.html" class="footer-link">Facial Studio</a>
+            </div>
+          </div>
+
+          <div>
+            <p class="footer-col-title">VISIT &amp; CONNECT</p>
+            <div class="footer-links">
+              <a href="tel:+9779818565297" class="footer-link">Phone &amp; WhatsApp: +977-9818565297</a>
+              <a
+                href="https://instagram.com/shringar_touch_with_beauty"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer-link"
+              >
+                Instagram: @shringar_touch_with_beauty ↗
+              </a>
+              <a
+                href="https://www.google.com/maps/place/Shringar+unisex+salon+%26+Make-up+Studio/@27.6932626,85.3688654,17z/data=!3m1!4b1!4m6!3m5!1s0x39eb1b001f20bdad:0xd8fcc2e0f1a87e5a!8m2!3d27.6932626!4d85.3688654!16s%2Fg%2F11nvw0dv5b?entry=ttu&g_ep=EgoyMDI2MTExOC4xIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer-link"
+              >
+                Google Maps Directions ↗
+              </a>
+              <a href="#location" class="footer-link">27.693263° N, 85.368865° E</a>
+            </div>
+          </div>
         </div>
 
-        <div class="footer-meta">
-          <span>© <span id="footer-year">2026</span> Shringar. All rights reserved.</span>
+        <div class="footer-bottom">
+          <span>© <span id="footer-year">2026</span> Shringar Unisex Salon &amp; Makeup Studio. All rights reserved.</span>
           <a href="#top" class="footer-top-link">Back to top ↗</a>
         </div>
       </div>
@@ -336,6 +453,7 @@
 
     <div class="toast-region" id="toast-region" aria-live="polite"></div>
 
-    <script type="module" src="/src/app.js"></script>
+    <script defer src="js/data.js"></script>
+    <script defer src="js/app.js"></script>
   </body>
 </html>

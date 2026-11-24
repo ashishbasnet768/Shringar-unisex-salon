@@ -1,28 +1,28 @@
-import menHaircutFadeImg from './assets/images/men_haircut_fade_1795444912707.jpg';
-import menBeardTrimImg from './assets/images/men_beard_trim_1795444912313.jpg';
-import menCleanShaveImg from './assets/images/men_clean_shave_1795444911921.jpg';
-import menScalpCareImg from './assets/images/men_scalp_care_1795444911873.jpg';
-import beautyThreadingImg from './assets/images/beauty_threading_1795444912260.jpg';
-import beautyWaxingImg from './assets/images/beauty_waxing_1795444912025.jpg';
-import beautyBodyWaxingImg from './assets/images/beauty_body_waxing_1795445885908.jpg';
-import beautyFacialGroomingImg from './assets/images/beauty_facial_grooming_1795444912786.jpg';
-import facialDeepCleanseImg from './assets/images/facial_deep_cleanse_1795444911885.jpg';
-import facialGlowRitualImg from './assets/images/facial_glow_ritual_1795444912480.jpg';
-import facialHydratingCalmImg from './assets/images/facial_hydrating_calm_1795444911654.jpg';
-import prodCasmaraHydraImg from './assets/images/prod_casmara_hydra_1795446118643.jpg';
-import prodCasmaraLighteningImg from './assets/images/prod_casmara_lightening_1795446119204.jpg';
-import prodGkBalancingImg from './assets/images/prod_gk_balancing_1795446118485.jpg';
-import prodLorealAbsolutImg from './assets/images/prod_loreal_absolut_1795446119159.jpg';
-import prodLorealInforcerMaskImg from './assets/images/prod_loreal_inforcer_mask_1795446119292.jpg';
-import prodLorealInforcerShampooImg from './assets/images/prod_loreal_inforcer_shampoo_1795446119581.jpg';
-import prodPurestCleanserImg from './assets/images/prod_purest_cleanser_1795446118704.jpg';
-import prodPurestRetinolImg from './assets/images/prod_purest_retinol_1795446119139.jpg';
-import prodPurestSpf50Img from './assets/images/prod_purest_spf50_1795446118940.jpg';
+const menHaircutFadeImg = 'images/men_haircut_fade_1795444912707.jpg';
+const menBeardTrimImg = 'images/men_beard_trim_1795444912313.jpg';
+const menCleanShaveImg = 'images/men_clean_shave_1795444911921.jpg';
+const menScalpCareImg = 'images/men_scalp_care_1795444911873.jpg';
+const beautyThreadingImg = 'images/beauty_threading_1795444912260.jpg';
+const beautyWaxingImg = 'images/beauty_waxing_1795444912025.jpg';
+const beautyBodyWaxingImg = 'images/beauty_body_waxing_1795445885908.jpg';
+const beautyFacialGroomingImg = 'images/beauty_facial_grooming_1795444912786.jpg';
+const facialDeepCleanseImg = 'images/facial_deep_cleanse_1795444911885.jpg';
+const facialGlowRitualImg = 'images/facial_glow_ritual_1795444912480.jpg';
+const facialHydratingCalmImg = 'images/facial_hydrating_calm_1795444911654.jpg';
+const prodCasmaraHydraImg = 'images/prod_casmara_hydra_1795446118643.jpg';
+const prodCasmaraLighteningImg = 'images/prod_casmara_lightening_1795446119204.jpg';
+const prodGkBalancingImg = 'images/prod_gk_balancing_1795446118485.jpg';
+const prodLorealAbsolutImg = 'images/prod_loreal_absolut_1795446119159.jpg';
+const prodLorealInforcerMaskImg = 'images/prod_loreal_inforcer_mask_1795446119292.jpg';
+const prodLorealInforcerShampooImg = 'images/prod_loreal_inforcer_shampoo_1795446119581.jpg';
+const prodPurestCleanserImg = 'images/prod_purest_cleanser_1795446118704.jpg';
+const prodPurestRetinolImg = 'images/prod_purest_retinol_1795446119139.jpg';
+const prodPurestSpf50Img = 'images/prod_purest_spf50_1795446118940.jpg';
 
-export const STUDIO_CATEGORIES = [
+const STUDIO_CATEGORIES = [
   {
     id: 'hair',
-    pageUrl: '/hair.html',
+    pageUrl: 'hair.html',
     index: '01',
     tags: 'CUT · COLOUR · TREATMENTS · SPA',
     title: 'Hair',
@@ -30,7 +30,7 @@ export const STUDIO_CATEGORIES = [
     description:
       'All types of ladies haircuts, balayage, global colour, keratin, hair botox, nano botox, and L’Oréal hair spa.',
     ctaLabel: 'Explore the hair studio',
-    image: '/assets/aistudio/shringar-campaign_0c203bb4.jpg',
+    image: 'images/shringar-campaign_0c203bb4.jpg',
     imagePosition: 'center 20%',
     productsNote: 'Professional hair colour & treatments featuring:',
     productsUsed: [
@@ -53,7 +53,7 @@ export const STUDIO_CATEGORIES = [
           'Hairdo & Hairstyling',
           'Party Hairstyles & Special Occasion Hairstyles',
         ],
-        image: '/assets/aistudio/hair-cut_a75ad79a.jpg',
+        image: 'images/hair-cut_a75ad79a.jpg',
         imagePosition: 'center 20%',
       },
       {
@@ -68,7 +68,7 @@ export const STUDIO_CATEGORIES = [
           'Fashion Hair Colour',
           'All Types of Hair Colour Services',
         ],
-        image: '/assets/aistudio/hair-colour_3e7faf20.jpg',
+        image: 'images/hair-colour_3e7faf20.jpg',
         imagePosition: 'center 25%',
       },
       {
@@ -83,7 +83,7 @@ export const STUDIO_CATEGORIES = [
           'Nano Botox',
           'Hair Straightening',
         ],
-        image: '/assets/aistudio/hair-keratin_f6e77b7c.jpg',
+        image: 'images/hair-keratin_f6e77b7c.jpg',
         imagePosition: 'center 18%',
       },
       {
@@ -96,14 +96,14 @@ export const STUDIO_CATEGORIES = [
           'L’Oréal Hair Spa',
           'Protein Hair Spa',
         ],
-        image: '/assets/aistudio/hair-spa_93dcee0e.jpg',
+        image: 'images/hair-spa_93dcee0e.jpg',
         imagePosition: 'center 30%',
       },
     ],
   },
   {
     id: 'men',
-    pageUrl: '/men.html',
+    pageUrl: 'men.html',
     index: '02',
     tags: 'CUT · BEARD · SHAVE · STYLING',
     title: 'Men',
@@ -173,7 +173,7 @@ export const STUDIO_CATEGORIES = [
   },
   {
     id: 'makeup',
-    pageUrl: '/makeup.html',
+    pageUrl: 'makeup.html',
     index: '03',
     tags: 'BRIDAL · SANGEET · PARTY · GROOM',
     title: 'Makeup',
@@ -181,7 +181,7 @@ export const STUDIO_CATEGORIES = [
     description:
       'Bridal, reception, mehendi, sangeet, engagement, party, groom and normal makeup crafted with Huda Beauty and MAC Cosmetics.',
     ctaLabel: 'Explore the makeup studio',
-    image: '/assets/aistudio/shringar-makeup_0aa98376.jpg',
+    image: 'images/shringar-makeup_0aa98376.jpg',
     imagePosition: 'center 18%',
     productsNote: 'Premium makeup products we use:',
     productsUsed: ['Huda Beauty', 'MAC Cosmetics'],
@@ -215,7 +215,7 @@ export const STUDIO_CATEGORIES = [
           'Groom Makeup',
           'Huda Beauty & MAC Complexion Prep',
         ],
-        image: '/assets/aistudio/makeup-bridal_aa31b99a.jpg',
+        image: 'images/makeup-bridal_aa31b99a.jpg',
         imagePosition: 'center 18%',
       },
       {
@@ -228,7 +228,7 @@ export const STUDIO_CATEGORIES = [
           'Mehendi Makeup',
           'Sangeet Makeup',
         ],
-        image: '/assets/aistudio/makeup-engagement_1cb2a6fb.jpg',
+        image: 'images/makeup-engagement_1cb2a6fb.jpg',
         imagePosition: 'center 18%',
       },
       {
@@ -241,7 +241,7 @@ export const STUDIO_CATEGORIES = [
           'Sculpted Eye & Lash Artistry',
           'Sleek Bun or Evening Waves',
         ],
-        image: '/assets/aistudio/makeup-party_113054ea.jpg',
+        image: 'images/makeup-party_113054ea.jpg',
         imagePosition: 'center 18%',
       },
       {
@@ -254,14 +254,14 @@ export const STUDIO_CATEGORIES = [
           'Skin Hydration & Natural Base',
           'Soft Cheek & Lip Tint',
         ],
-        image: '/assets/aistudio/makeup-everyday_1f94b37f.jpg',
+        image: 'images/makeup-everyday_1f94b37f.jpg',
         imagePosition: 'center 18%',
       },
     ],
   },
   {
     id: 'nails',
-    pageUrl: '/nails.html',
+    pageUrl: 'nails.html',
     index: '04',
     tags: 'MANICURE · PEDICURE · EXTENSIONS · ART',
     title: 'Nails',
@@ -269,7 +269,7 @@ export const STUDIO_CATEGORIES = [
     description:
       'All types of nail care services — normal and deluxe manicure & pedicure, gel polish, gel overlay, nail extensions, and nail art.',
     ctaLabel: 'Explore the nails studio',
-    image: '/assets/aistudio/shringar-nails_a86a8e25.jpg',
+    image: 'images/shringar-nails_a86a8e25.jpg',
     imagePosition: 'center center',
     productsNote: '',
     productsUsed: [],
@@ -285,7 +285,7 @@ export const STUDIO_CATEGORIES = [
           'Deluxe Manicure',
           'Cuticle Work & Relaxing Hand Massage',
         ],
-        image: '/assets/aistudio/nails-manicure_b4262605.jpg',
+        image: 'images/nails-manicure_b4262605.jpg',
         imagePosition: 'center center',
       },
       {
@@ -298,7 +298,7 @@ export const STUDIO_CATEGORIES = [
           'Deluxe Pedicure',
           'Exfoliating Scrub & Foot Massage',
         ],
-        image: '/assets/aistudio/nails-pedicure_a78b7b32.jpg',
+        image: 'images/nails-pedicure_a78b7b32.jpg',
         imagePosition: 'center center',
       },
       {
@@ -311,7 +311,7 @@ export const STUDIO_CATEGORIES = [
           'Gel Overlay',
           'Nail Extensions',
         ],
-        image: '/assets/aistudio/nails-gel_d04a53c6.jpg',
+        image: 'images/nails-gel_d04a53c6.jpg',
         imagePosition: 'center center',
       },
       {
@@ -324,14 +324,14 @@ export const STUDIO_CATEGORIES = [
           'All Types of Nail Care Services',
           'High-Gloss Protective Top Coat',
         ],
-        image: '/assets/aistudio/nails-art_3d85aa8f.jpg',
+        image: 'images/nails-art_3d85aa8f.jpg',
         imagePosition: 'center center',
       },
     ],
   },
   {
     id: 'beauty',
-    pageUrl: '/beauty.html',
+    pageUrl: 'beauty.html',
     index: '05',
     tags: 'THREADING · WAXING',
     title: 'Beauty',
@@ -401,7 +401,7 @@ export const STUDIO_CATEGORIES = [
   },
   {
     id: 'facial',
-    pageUrl: '/facial.html',
+    pageUrl: 'facial.html',
     index: '06',
     tags: 'CLEANSING · FACIALS · SKIN TREATMENTS',
     title: 'Facial',
@@ -465,7 +465,7 @@ export const STUDIO_CATEGORIES = [
   },
 ];
 
-export const STUDIO_PRODUCTS = [
+const STUDIO_PRODUCTS = [
   {
     brand: 'L’ORÉAL PROFESSIONNEL',
     name: 'Absolut Repair Shampoo',
@@ -513,34 +513,34 @@ export const STUDIO_PRODUCTS = [
   },
 ];
 
-export const LOOKBOOK_ITEMS = [
+const LOOKBOOK_ITEMS = [
   {
     id: 'look-makeup',
     title: 'Soft glam, lasting impressions',
     category: 'MAKEUP & BRIDAL',
-    image: '/assets/aistudio/WhatsApp_Image_2026-11-23_at_16.16.11_aa54b829.jpeg',
+    image: 'images/WhatsApp_Image_2026-11-23_at_16.16.11_aa54b829.jpeg',
     imagePosition: 'center 22%',
     tall: false,
     caption: 'Real Shringar client transformations — luminous bridal glow, floral updos, and evening party glam.',
     galleryExtras: [
       {
-        src: '/assets/aistudio/WhatsApp_Image_2026-11-23_at_16.27.09_f5d723aa.jpeg',
+        src: 'images/WhatsApp_Image_2026-11-23_at_16.27.09_f5d723aa.jpeg',
         label: 'Bridal Makeup',
       },
       {
-        src: '/assets/aistudio/WhatsApp_Image_2026-11-23_at_16.32.37_e7c24c60.jpeg',
+        src: 'images/WhatsApp_Image_2026-11-23_at_16.32.37_e7c24c60.jpeg',
         label: 'Reception & Wedding Glam',
       },
       {
-        src: '/assets/aistudio/WhatsApp_Image_2026-11-23_at_16.16.06_d9d76000.jpeg',
+        src: 'images/WhatsApp_Image_2026-11-23_at_16.16.06_d9d76000.jpeg',
         label: 'Engagement Soft Glam',
       },
       {
-        src: '/assets/aistudio/WhatsApp_Image_2026-11-23_at_16.16.33_bdb8d86f.jpeg',
+        src: 'images/WhatsApp_Image_2026-11-23_at_16.16.33_bdb8d86f.jpeg',
         label: 'Bridal Studio Look',
       },
       {
-        src: '/assets/aistudio/WhatsApp_Image_2026-11-23_at_16.28.16_c98a3709.jpeg',
+        src: 'images/WhatsApp_Image_2026-11-23_at_16.28.16_c98a3709.jpeg',
         label: 'Party Makeup',
       },
     ],
@@ -549,29 +549,29 @@ export const LOOKBOOK_ITEMS = [
     id: 'look-hair',
     title: 'A good hair day, reimagined',
     category: 'HAIR & STYLING',
-    image: '/assets/aistudio/WhatsApp_Image_2026-11-23_at_16.16.15_b657eb7b.jpeg',
+    image: 'images/WhatsApp_Image_2026-11-23_at_16.16.15_b657eb7b.jpeg',
     imagePosition: 'center 25%',
     tall: true,
     caption: 'Sunlit balayage waves, sleek straightening, and floral occasion hairdos crafted in-studio.',
     galleryExtras: [
       {
-        src: '/assets/aistudio/WhatsApp_Image_2026-11-23_at_16.32.14_fc36dfad.jpeg',
+        src: 'images/WhatsApp_Image_2026-11-23_at_16.32.14_fc36dfad.jpeg',
         label: 'Hair Colour & Straightening',
       },
       {
-        src: '/assets/aistudio/WhatsApp_Image_2026-11-23_at_16.32.36_16f8d33d.jpeg',
+        src: 'images/WhatsApp_Image_2026-11-23_at_16.32.36_16f8d33d.jpeg',
         label: 'Half-Up Floral Waves',
       },
       {
-        src: '/assets/aistudio/WhatsApp_Image_2026-11-23_at_16.29.56_424a39fa.jpeg',
+        src: 'images/WhatsApp_Image_2026-11-23_at_16.29.56_424a39fa.jpeg',
         label: 'Floral Bun Hairstyling',
       },
       {
-        src: '/assets/aistudio/WhatsApp_Image_2026-11-23_at_16.32.43_8ccbfd8a.jpeg',
+        src: 'images/WhatsApp_Image_2026-11-23_at_16.32.43_8ccbfd8a.jpeg',
         label: 'Bridal Updo & Curls',
       },
       {
-        src: '/assets/aistudio/hair-cut_a75ad79a.jpg',
+        src: 'images/hair-cut_a75ad79a.jpg',
         label: 'Ladies Haircuts & Styling',
       },
     ],
@@ -580,20 +580,20 @@ export const LOOKBOOK_ITEMS = [
     id: 'look-nails',
     title: 'Details worth falling for',
     category: 'NAILS',
-    image: '/assets/aistudio/shringar-nails_a86a8e25.jpg',
+    image: 'images/shringar-nails_a86a8e25.jpg',
     imagePosition: 'center center',
     tall: false,
     caption: 'Deep crimson high-gloss gel manicure shaped to clean natural proportions.',
     galleryExtras: [
-      { src: '/assets/aistudio/nails-manicure_b4262605.jpg', label: 'Normal & Deluxe Manicure' },
-      { src: '/assets/aistudio/nails-pedicure_a78b7b32.jpg', label: 'Normal & Deluxe Pedicure' },
-      { src: '/assets/aistudio/nails-gel_d04a53c6.jpg', label: 'Gel Polish, Overlay & Extensions' },
-      { src: '/assets/aistudio/nails-art_3d85aa8f.jpg', label: 'Nail Art & Nail Designing' },
+      { src: 'images/nails-manicure_b4262605.jpg', label: 'Normal & Deluxe Manicure' },
+      { src: 'images/nails-pedicure_a78b7b32.jpg', label: 'Normal & Deluxe Pedicure' },
+      { src: 'images/nails-gel_d04a53c6.jpg', label: 'Gel Polish, Overlay & Extensions' },
+      { src: 'images/nails-art_3d85aa8f.jpg', label: 'Nail Art & Nail Designing' },
     ],
   },
 ];
 
-export const TIME_SLOTS = [
+const TIME_SLOTS = [
   '10:00 AM',
   '11:30 AM',
   '01:00 PM',
@@ -603,6 +603,24 @@ export const TIME_SLOTS = [
   '07:00 PM',
 ];
 
-export const SALON_WHATSAPP_NUMBER = '9779818565297';
-export const SALON_WHATSAPP_DISPLAY = '+977-9818565297';
+const SALON_WHATSAPP_NUMBER = '9779818565297';
+const SALON_WHATSAPP_DISPLAY = '+977-9818565297';
 
+const SALON_LOCATION = {
+  name: 'Shringar Unisex Salon & Makeup Studio',
+  lat: 27.6932626,
+  lng: 85.3688654,
+  coordsLabel: '27.693263° N, 85.368865° E',
+  mapsUrl:
+    'https://www.google.com/maps/place/Shringar+unisex+salon+%26+Make-up+Studio/@27.6932626,85.3688654,17z/data=!3m1!4b1!4m6!3m5!1s0x39eb1b001f20bdad:0xd8fcc2e0f1a87e5a!8m2!3d27.6932626!4d85.3688654!16s%2Fg%2F11nvw0dv5b?entry=ttu&g_ep=EgoyMDI2MTExOC4xIKXMDSoASAFQAw%3D%3D',
+};
+
+window.SHRINGAR_DATA = {
+  STUDIO_CATEGORIES,
+  STUDIO_PRODUCTS,
+  LOOKBOOK_ITEMS,
+  TIME_SLOTS,
+  SALON_WHATSAPP_NUMBER,
+  SALON_WHATSAPP_DISPLAY,
+  SALON_LOCATION,
+};
