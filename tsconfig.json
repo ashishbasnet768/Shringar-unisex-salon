@@ -14,6 +14,6 @@
     "allowJs": true,
     "noEmit": true
   },
-  "include": ["public/js/**/*.js", "vite.config.ts"],
+  "include": ["public/*.js", "vite.config.ts"],
   "exclude": ["dist"]
 }
