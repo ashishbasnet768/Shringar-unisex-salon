@@ -1,3 +1,4 @@
+import fs from 'fs';
 import path from 'path';
 import {defineConfig, loadEnv} from 'vite';
 
@@ -11,6 +12,7 @@ export default defineConfig(({mode}) => {
     '';
 
   return {
+    publicDir: false,
     plugins: [
       {
         name: 'inject-maps-meta',
@@ -23,6 +25,51 @@ export default defineConfig(({mode}) => {
             '</head>',
             `    <meta name="google-maps-api-key" content="${safeKey}" />\n  </head>`,
           );
+        },
+      },
+      {
+        name: 'serve-public-static-dev',
+        configureServer(server) {
+          const mimeTypes: Record<string, string> = {
+            '.css': 'text/css; charset=utf-8',
+            '.js': 'application/javascript; charset=utf-8',
+            '.jpg': 'image/jpeg',
+            '.jpeg': 'image/jpeg',
+            '.png': 'image/png',
+            '.webp': 'image/webp',
+            '.svg': 'image/svg+xml',
+            '.zip': 'application/zip',
+          };
+          server.middlewares.use((req, res, next) => {
+            const urlPath = (req.url || '').split('?')[0];
+            if (!urlPath.startsWith('/public/')) return next();
+            const rel = urlPath.slice(1);
+            const filePath = path.resolve(__dirname, rel);
+            if (!filePath.startsWith(path.resolve(__dirname, 'public')) || !fs.existsSync(filePath) || fs.statSync(filePath).isDirectory()) {
+              return next();
+            }
+            const ext = path.extname(filePath).toLowerCase();
+            res.setHeader('Content-Type', mimeTypes[ext] || 'application/octet-stream');
+            fs.createReadStream(filePath).pipe(res);
+          });
+        },
+      },
+      {
+        name: 'copy-public-dir-to-dist',
+        apply: 'build',
+        closeBundle() {
+          const srcDir = path.resolve(__dirname, 'public');
+          const destDir = path.resolve(__dirname, 'dist', 'public');
+          for (const sub of ['css', 'js', 'images']) {
+            const subSrc = path.join(srcDir, sub);
+            if (fs.existsSync(subSrc)) {
+              fs.cpSync(subSrc, path.join(destDir, sub), {recursive: true});
+            }
+          }
+          const zipSrc = path.join(srcDir, 'shringar-salon-html-css-js.zip');
+          if (fs.existsSync(zipSrc)) {
+            fs.copyFileSync(zipSrc, path.join(destDir, 'shringar-salon-html-css-js.zip'));
+          }
         },
       },
     ],
