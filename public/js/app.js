@@ -820,23 +820,24 @@
     });
   }
 
-  function renderMapFallback(mapEl) {
-    mapEl.innerHTML = `
-      <div class="location-map-fallback">
-        <p class="eyebrow">SHRINGAR STUDIO PIN</p>
-        <h3 class="location-map-fallback-title">${escapeHtml(SALON_LOCATION.name)}</h3>
-        <p class="location-map-fallback-coords">${escapeHtml(SALON_LOCATION.coordsLabel)}</p>
-        <a
-          href="${escapeHtml(SALON_LOCATION.mapsUrl)}"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="btn-burgundy"
-        >
-          <span>Open in Google Maps</span>
-          <span aria-hidden="true">↗</span>
-        </a>
-      </div>`;
-  }
+  
+function renderMapFallback(mapEl) {
+  const lat = SALON_LOCATION.lat;
+  const lng = SALON_LOCATION.lng;
+
+  mapEl.innerHTML = `
+    <iframe
+      src="https://www.google.com/maps?q=${lat},${lng}&output=embed"
+      width="100%"
+      height="100%"
+      style="min-height: 500px; width: 100%; border: 0; display: block;"
+      loading="lazy"
+      allowfullscreen
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Shringar Unisex Salon Google Maps Location">
+    </iframe>
+  `;
+}
 
   // Official Google Maps JavaScript API dynamic library bootstrap (pure browser JS)
   function ensureGoogleMapsLoader(apiKey) {
