@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Great+Vibes&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
@@ -243,7 +243,7 @@
                 Find your <span class="heading-italic-burgundy">next look.</span>
               </h2>
             </div>
-            <p class="header-aside">A moodboard for your next moment.</p>
+            <p class="header-aside">A quick glimpse of recent studio work — tap any look to browse photos.</p>
           </div>
 
           <div class="lookbook-grid" id="lookbook-grid"></div>
@@ -272,13 +272,16 @@
       <!-- Section 5: Visit the Studio (Interactive Google Map) -->
       <section class="section-ivory" id="location">
         <div class="container location-split">
-          <div class="location-map-frame">
-            <div
-              id="shringar-map"
-              class="location-map-canvas"
-              role="region"
-              aria-label="Interactive map of Shringar Unisex Salon and Makeup Studio"
-            ></div>
+          <div class="location-map-col">
+            <h3 class="location-map-header">Location of Shringar Unisex Salon &amp; Makeup Studio</h3>
+            <div class="location-map-frame">
+              <div
+                id="shringar-map"
+                class="location-map-canvas"
+                role="region"
+                aria-label="Interactive map of Shringar Unisex Salon and Makeup Studio"
+              ></div>
+            </div>
           </div>
 
           <div class="location-copy">
@@ -380,60 +383,6 @@
         </div>
       </section>
     </main>
-
-    <!-- Editorial Footer -->
-    <footer class="site-footer">
-      <div class="container">
-        <div class="footer-grid">
-          <div class="footer-brand">
-            <span class="footer-wordmark">shringar</span>
-            <span class="footer-sub">UNISEX SALON &amp; MAKEUP STUDIO</span>
-            <p class="footer-tagline">Look good. Feel good. Be confident. Hair, grooming, makeup, nails, beauty &amp; facial care.</p>
-          </div>
-
-          <div>
-            <p class="footer-col-title">OUR STUDIOS</p>
-            <div class="footer-links">
-              <a href="hair.html" class="footer-link">Hair Studio</a>
-              <a href="men.html" class="footer-link">Men’s Studio</a>
-              <a href="makeup.html" class="footer-link">Makeup Studio</a>
-              <a href="nails.html" class="footer-link">Nails Studio</a>
-              <a href="beauty.html" class="footer-link">Beauty Studio</a>
-              <a href="facial.html" class="footer-link">Facial Studio</a>
-            </div>
-          </div>
-
-          <div>
-            <p class="footer-col-title">VISIT &amp; CONNECT</p>
-            <div class="footer-links">
-              <a href="tel:+9779818565297" class="footer-link">Phone &amp; WhatsApp: +977-9818565297</a>
-              <a
-                href="https://instagram.com/shringar_touch_with_beauty"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="footer-link"
-              >
-                Instagram: @shringar_touch_with_beauty ↗
-              </a>
-              <a
-                href="https://www.google.com/maps/place/Shringar+unisex+salon+%26+Make-up+Studio/@27.6932626,85.3688654,17z/data=!3m1!4b1!4m6!3m5!1s0x39eb1b001f20bdad:0xd8fcc2e0f1a87e5a!8m2!3d27.6932626!4d85.3688654!16s%2Fg%2F11nvw0dv5b?entry=ttu&g_ep=EgoyMDI2MTExOC4xIKXMDSoASAFQAw%3D%3D"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="footer-link"
-              >
-                Google Maps Directions ↗
-              </a>
-              <a href="#location" class="footer-link">27.693263° N, 85.368865° E</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="footer-bottom">
-          <span>© <span id="footer-year">2026</span> Shringar Unisex Salon &amp; Makeup Studio. All rights reserved.</span>
-          <a href="#top" class="footer-top-link">Back to top ↗</a>
-        </div>
-      </div>
-    </footer>
 
     <!-- Lookbook Lightbox Modal -->
     <div class="modal-backdrop" id="lookbook-modal" role="dialog" aria-modal="true" aria-labelledby="lookbook-modal-title" hidden>

@@ -1,6 +1,6 @@
-const menHaircutFadeImg = 'images/men_haircut_fade_1795444912707.jpg';
-const menBeardTrimImg = 'images/men_beard_trim_1795444912313.jpg';
-const menCleanShaveImg = 'images/men_clean_shave_1795444911921.jpg';
+const menHaircutFadeImg = 'images/67463_28f7b644.png';
+const menBeardTrimImg = 'images/15709_1f94c832.png';
+const menCleanShaveImg = 'images/6920_395ac92d.png';
 const menScalpCareImg = 'images/men_scalp_care_1795444911873.jpg';
 const beautyThreadingImg = 'images/beauty_threading_1795444912260.jpg';
 const beautyWaxingImg = 'images/beauty_waxing_1795444912025.jpg';
@@ -128,7 +128,7 @@ const STUDIO_CATEGORIES = [
           'Tailored Scissor & Clipper Finish',
         ],
         image: menHaircutFadeImg,
-        imagePosition: 'center 25%',
+        imagePosition: 'center 22%',
       },
       {
         name: 'Beard Trimming & Beard Designing',
@@ -141,7 +141,7 @@ const STUDIO_CATEGORIES = [
           'Precision Line-Up & Conditioning Care',
         ],
         image: menBeardTrimImg,
-        imagePosition: 'center 22%',
+        imagePosition: 'center 30%',
       },
       {
         name: 'Clean Shaving',
@@ -154,7 +154,7 @@ const STUDIO_CATEGORIES = [
           'Soothing Aftershave Finish',
         ],
         image: menCleanShaveImg,
-        imagePosition: 'center 25%',
+        imagePosition: 'center 35%',
       },
       {
         name: 'Hair Styling & Scalp Care',
@@ -549,30 +549,30 @@ const LOOKBOOK_ITEMS = [
     id: 'look-hair',
     title: 'A good hair day, reimagined',
     category: 'HAIR & STYLING',
-    image: 'images/WhatsApp_Image_2026-11-23_at_16.16.15_b657eb7b.jpeg',
+    image: 'images/7515_188b5325.png',
     imagePosition: 'center 25%',
     tall: true,
-    caption: 'Sunlit balayage waves, sleek straightening, and floral occasion hairdos crafted in-studio.',
+    caption: 'Sunlit balayage waves, layered blowouts, sleek straightening, and floral occasion hairdos crafted in-studio.',
     galleryExtras: [
+      {
+        src: 'images/WhatsApp_Image_2026-11-24_at_17.13.52_58b83ee1.jpeg',
+        label: 'Balayage Waves & Curls',
+      },
       {
         src: 'images/WhatsApp_Image_2026-11-23_at_16.32.14_fc36dfad.jpeg',
         label: 'Hair Colour & Straightening',
-      },
-      {
-        src: 'images/WhatsApp_Image_2026-11-23_at_16.32.36_16f8d33d.jpeg',
-        label: 'Half-Up Floral Waves',
       },
       {
         src: 'images/WhatsApp_Image_2026-11-23_at_16.29.56_424a39fa.jpeg',
         label: 'Floral Bun Hairstyling',
       },
       {
-        src: 'images/WhatsApp_Image_2026-11-23_at_16.32.43_8ccbfd8a.jpeg',
-        label: 'Bridal Updo & Curls',
+        src: 'images/43045_029bcbe4.png',
+        label: 'Bridal Updo',
       },
       {
-        src: 'images/hair-cut_a75ad79a.jpg',
-        label: 'Ladies Haircuts & Styling',
+        src: 'images/WhatsApp_Image_2026-11-24_at_17.13.52__1__be7c1828.jpeg',
+        label: 'Layered Blowout & Styling',
       },
     ],
   },
@@ -580,15 +580,31 @@ const LOOKBOOK_ITEMS = [
     id: 'look-nails',
     title: 'Details worth falling for',
     category: 'NAILS',
-    image: 'images/shringar-nails_a86a8e25.jpg',
+    image: 'images/7505_05e4428c.png',
     imagePosition: 'center center',
     tall: false,
-    caption: 'Deep crimson high-gloss gel manicure shaped to clean natural proportions.',
+    caption: 'Crimson gel sets, sheer nude chrome art, milky ombré nails, and crystal accents crafted in-studio.',
     galleryExtras: [
-      { src: 'images/nails-manicure_b4262605.jpg', label: 'Normal & Deluxe Manicure' },
+      { src: 'images/42964_baf2361c.png', label: 'Burgundy & Sheer Chrome Nail Art' },
+      { src: 'images/87200_c998f908.png', label: 'Milky Rose Ombré Gel Nails' },
+      { src: 'images/7258_6486f1bf.png', label: 'Classic Crimson Gel Manicure' },
       { src: 'images/nails-pedicure_a78b7b32.jpg', label: 'Normal & Deluxe Pedicure' },
-      { src: 'images/nails-gel_d04a53c6.jpg', label: 'Gel Polish, Overlay & Extensions' },
-      { src: 'images/nails-art_3d85aa8f.jpg', label: 'Nail Art & Nail Designing' },
+      { src: 'images/59975_9594b83e.png', label: 'Cute Nails' },
+    ],
+  },
+  {
+    id: 'look-men',
+    title: 'Sharp fades, effortless craft',
+    category: 'MEN’S HAIR & GROOMING',
+    image: menHaircutFadeImg,
+    imagePosition: 'center 22%',
+    tall: false,
+    caption: 'Precision skin fades, textured crops, blonde toning, beard designing, and warm-towel grooming.',
+    galleryExtras: [
+      { src: 'images/14855_ef121487.png', label: 'Platinum Textured Fade' },
+      { src: menBeardTrimImg, label: 'Beard Trimming & Designing' },
+      { src: menCleanShaveImg, label: 'Warm Towel Clean Shaving' },
+      { src: menScalpCareImg, label: 'Hair Styling & Scalp Care' },
     ],
   },
 ];
