@@ -184,8 +184,17 @@
     }).join('');
   }
 
-  // Render Products Showcase grid with brand filter bar (zero prices)
+  // Render Products Showcase grid with brand filter bar & mobile show-more toggle (zero prices)
   let activeProductBrand = 'ALL';
+  let showAllProductsMobile = false;
+
+  const PRODUCT_BRAND_LABELS = {
+    ALL: 'All Brands',
+    'L’ORÉAL PROFESSIONNEL': 'L’Oréal Professionnel',
+    'GK HAIR': 'GK Hair',
+    CASMARA: 'Casmara',
+    'THE PUREST SOLUTIONS': 'The Purest Solutions',
+  };
 
   function getFilteredProducts() {
     if (activeProductBrand === 'ALL') return STUDIO_PRODUCTS;
@@ -210,7 +219,11 @@
     const brands = ['ALL', ...Array.from(new Set(STUDIO_PRODUCTS.map((p) => p.brand)))];
     filterBar.innerHTML = brands
       .map((brand) => {
-        const label = brand === 'ALL' ? 'All Brands' : brand;
+        const count =
+          brand === 'ALL'
+            ? STUDIO_PRODUCTS.length
+            : STUDIO_PRODUCTS.filter((p) => p.brand === brand).length;
+        const label = PRODUCT_BRAND_LABELS[brand] || brand;
         const isActive = brand === activeProductBrand;
         return `
           <button
@@ -219,12 +232,18 @@
             data-filter-brand="${escapeHtml(brand)}"
             aria-pressed="${isActive ? 'true' : 'false'}"
           >
-            ${escapeHtml(label)}
+            <span>${escapeHtml(label)}</span>
+            <span class="product-filter-count">${count}</span>
           </button>`;
       })
       .join('');
 
     const items = getFilteredProducts();
+    const shouldCollapseMobile =
+      activeProductBrand === 'ALL' && !showAllProductsMobile && items.length > 4;
+
+    grid.classList.toggle('is-collapsed', shouldCollapseMobile);
+
     grid.innerHTML = items
       .map(
         (item) => `
@@ -255,6 +274,37 @@
         </article>`
       )
       .join('');
+
+    const toggleHostId = 'products-toggle-wrap';
+    let toggleWrap = document.getElementById(toggleHostId);
+    if (!toggleWrap) {
+      toggleWrap = document.createElement('div');
+      toggleWrap.id = toggleHostId;
+      toggleWrap.className = 'products-toggle-wrap';
+      grid.parentNode.insertBefore(toggleWrap, grid.nextSibling);
+    }
+
+    if (activeProductBrand === 'ALL' && items.length > 4) {
+      const remaining = items.length - 4;
+      toggleWrap.hidden = false;
+      toggleWrap.innerHTML = `
+        <button
+          type="button"
+          class="products-toggle-btn"
+          id="products-mobile-toggle"
+          aria-expanded="${showAllProductsMobile ? 'true' : 'false'}"
+        >
+          <span>${
+            showAllProductsMobile
+              ? 'Show fewer products'
+              : `View all ${items.length} products (${remaining} more)`
+          }</span>
+          <span aria-hidden="true">${showAllProductsMobile ? '↑' : '↓'}</span>
+        </button>`;
+    } else {
+      toggleWrap.hidden = true;
+      toggleWrap.innerHTML = '';
+    }
   }
 
   // Render dedicated Studio Service Page Grid + optional studio products & makeup packages (zero prices)
@@ -669,6 +719,12 @@
       const brandBtn = e.target.closest('[data-filter-brand]');
       if (brandBtn) {
         activeProductBrand = brandBtn.getAttribute('data-filter-brand') || 'ALL';
+        renderProductsShowcase();
+        return;
+      }
+
+      if (e.target.closest('#products-mobile-toggle')) {
+        showAllProductsMobile = !showAllProductsMobile;
         renderProductsShowcase();
         return;
       }

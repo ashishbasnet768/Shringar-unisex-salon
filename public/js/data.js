@@ -472,16 +472,6 @@ const STUDIO_PRODUCTS = [
     image: prodLorealAbsolutImg,
   },
   {
-    brand: 'L’ORÉAL PROFESSIONNEL',
-    name: 'Inforcer Strengthening Shampoo',
-    image: prodLorealInforcerShampooImg,
-  },
-  {
-    brand: 'L’ORÉAL PROFESSIONNEL',
-    name: 'Inforcer Professional Mask',
-    image: prodLorealInforcerMaskImg,
-  },
-  {
     brand: 'GK HAIR',
     name: 'Balancing Shampoo & Conditioner',
     image: prodGkBalancingImg,
@@ -492,14 +482,24 @@ const STUDIO_PRODUCTS = [
     image: prodCasmaraHydraImg,
   },
   {
-    brand: 'CASMARA',
-    name: 'Lightening Nutri SPF 50 Cream',
-    image: prodCasmaraLighteningImg,
-  },
-  {
     brand: 'THE PUREST SOLUTIONS',
     name: 'Exfoliating Salicylic Acid Cleanser',
     image: prodPurestCleanserImg,
+  },
+  {
+    brand: 'L’ORÉAL PROFESSIONNEL',
+    name: 'Inforcer Strengthening Shampoo',
+    image: prodLorealInforcerShampooImg,
+  },
+  {
+    brand: 'L’ORÉAL PROFESSIONNEL',
+    name: 'Inforcer Professional Mask',
+    image: prodLorealInforcerMaskImg,
+  },
+  {
+    brand: 'CASMARA',
+    name: 'Lightening Nutri SPF 50 Cream',
+    image: prodCasmaraLighteningImg,
   },
   {
     brand: 'THE PUREST SOLUTIONS',
